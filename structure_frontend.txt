@@ -1,0 +1,30 @@
+simple-reading-gamification/
+├── app/
+│   ├── (auth)/
+│   │   ├── login/
+│   │   │   └── page.tsx           # Uses Client Component for BetterAuth form
+│   │   ├── register/
+│   │   │   └── page.tsx           # Uses Client Component for BetterAuth form
+│   │   └── layout.tsx
+│   │
+│   ├── (main)/
+│   │   ├── dashboard/
+│   │   │   └── page.tsx           # Shows User Stats (Server Component)
+│   │   ├── read/
+│   │   │   └── page.tsx           # Displays book list and tracking UI (Server/Client Mix)
+│   │   ├── leaderboard/
+│   │   │   └── page.tsx           # Displays Leaderboard (Server Component)
+│   │   └── layout.tsx
+│   │
+│   ├── api/                       # (Existing Backend API Routes)
+│   │
+│   ├── globals.css                # (Existing Tailwind setup)
+│   ├── layout.tsx                 # Root Layout (Applies pastel theme)
+│   └── page.tsx                   # Landing Page (Existing)
+│
+├── components/                    # New folder for reusable UI elements
+│   ├── ui/
+│   │   ├── Button.tsx             # Reusable pastel button
+│   │   └── Header.tsx             # Minimalist navigation bar
+│
+└── lib/                           # (Existing Library Files)
