@@ -1,0 +1,49 @@
+simple-reading-gamification/
+├── app/
+│   ├── (auth)/                    # Auth group routes (Simplified)
+│   │   ├── login/
+│   │   │   └── page.tsx           # BetterAuth Login UI
+│   │   ├── register/
+│   │   │   └── page.tsx           # BetterAuth Register UI
+│   │   └── layout.tsx
+│   │
+│   ├── (main)/                    # Protected/Main User Routes
+│   │   ├── dashboard/
+│   │   │   └── page.tsx           # Shows User Stats/Progress
+│   │   ├── read/
+│   │   │   └── page.tsx           # Displays simple book list and page tracker
+│   │   ├── leaderboard/
+│   │   │   └── page.tsx           # Displays Leaderboard
+│   │   └── layout.tsx
+│   │
+│   ├── api/                       # API Routes
+│   │   ├── auth/
+│   │   │   └── [...all]/
+│   │   │       └── route.ts       # BetterAuth Handler
+│   │   ├── leaderboard/
+│   │   │   └── route.ts           # GET Leaderboard
+│   │   └── reading/
+│   │       └── track/
+│   │           └── route.ts       # POST to update pages read
+│   │
+│   ├── layout.tsx                 # Root layout
+│   ├── page.tsx                   # Landing page (with SEO meta tags)
+│   └── globals.css
+│
+├── lib/
+│   ├── auth/
+│   │   ├── config.ts              # Simplified BetterAuth configuration (JWT Strategy)
+│   │   └── session.ts             # Session helpers (requireAuth)
+│   ├── data/
+│   │   └── mockStore.ts           # In-memory "Database" and CRUD functions
+│   └── utils/
+│       └── validation.ts          # (Placeholder, if any validation needed)
+│
+├── middleware.ts                  # Auth middleware (simplified)
+├── types/
+│   └── index.ts                   # Type definitions
+│
+├── .env.example                   # Environment file template
+├── next.config.js
+├── tsconfig.json
+└── README.md
